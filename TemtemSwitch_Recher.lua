@@ -16,7 +16,7 @@ if tblua:IsInWorld() == true then
         tblua:Sleep(1000)
         tblua:PressKey(0x35)
         tblua:Sleep(1000)
-        tblua:PressKey(0x53)
+        tblua:PressKey(0x44)
         tblua:Sleep(1000)
         tblua:PressKey(0x53)
         tblua:Sleep(1000)
