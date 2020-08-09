@@ -13,15 +13,15 @@ if tblua:IsInWorld() == true then
     tblua:CheckPause()
     tblua:CheckLogout()
     if tblua:IsInFight() == true then
-        tblua:Sleep(500)
+        tblua:Sleep(1000)
         tblua:PressKey(0x35)
-        tblua:Sleep(500)
+        tblua:Sleep(1000)
         tblua:PressKey(0x53)
-        tblua:Sleep(500)
+        tblua:Sleep(1000)
         tblua:PressKey(0x53)
-        tblua:Sleep(500)
+        tblua:Sleep(1000)
         tblua:PressKey(0x46)
-        tblua:Sleep(25000)
+        tblua:Sleep(27000)
         tblua:WaitLoop(false)
     end
 
