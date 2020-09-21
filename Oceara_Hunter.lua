@@ -1,3 +1,4 @@
+--Working
 import("TemBot.Lua.TemBotLua")
 
 --Registering the Temtem Window
