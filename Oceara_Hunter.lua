@@ -15,10 +15,12 @@ if tblua:IsInWorld() == true then
         tblua:CheckLogout()
         while tblua:IsInWorld() == true do
             --full random movement
-            local MovementSwitch = math.random(2)
+            local MovementSwitch = math.random(1,3)
             if MovementSwitch == 1 then
                 tblua:RandomArea()
             elseif MovementSwitch == 2 then
+                tblua:CircleArea()
+            elseif MovementSwitch == 3 then
                 tblua:CircleArea()
             end
         end
@@ -114,7 +116,7 @@ if tblua:IsInWorld() == true then
                                 tblua:Sleep(cr)
                                 tblua:PressKey(0x31)
                                 tblua:Sleep(cr)
-                                tblua:PressKey(0x26)
+                                tblua:PressKey(0x57)
                                 tblua:Sleep(cr)
                                 tblua:PressKey(0x46)
                                 tblua:Sleep(cr)
@@ -159,49 +161,6 @@ if tblua:IsInWorld() == true then
                     -- Swap dead tem
                     tblua:PressKey(0x1B)
                     tblua:Sleep(crx)
-                elseif tblua:GetPixelColor(1180, 455) == "0x1E1E1E" then
-                    local swap = math.random(4)
-                    if swap == 4 then
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x46)
-                        tblua:Sleep(crx)
-                    elseif swap == 3 then
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x46)
-                        tblua:Sleep(crx)
-                    elseif swap == 2 then
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x46)
-                        tblua:Sleep(crx)
-                    elseif swap == 1 then
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x28)
-                        tblua:Sleep(crx)
-                        tblua:PressKey(0x46)
-                        tblua:Sleep(crx)
-                    end
                 else
                     tblua:Sleep(crx)
                 end
